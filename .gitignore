@@ -2,3 +2,4 @@ TRAIN/
 TEST/
 __pycache__/
 .venv/
+audioTest/
