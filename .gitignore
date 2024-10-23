@@ -3,3 +3,5 @@ TEST/
 __pycache__/
 .venv/
 audioTest/
+reconstructed_audio.wav/
+reconstructed_audio.wav
