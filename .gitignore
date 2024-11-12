@@ -5,4 +5,5 @@ __pycache__/
 audioTest/
 reconstructed_audio.wav/
 reconstructed_audio.wav/
-imgtest
+imgtest/
+Melimages
