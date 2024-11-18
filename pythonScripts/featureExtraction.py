@@ -10,13 +10,13 @@ import pandas as pd
 from pyAudioAnalysis import audioBasicIO, ShortTermFeatures
 
 # Define the root folder containing subfolders of audio files
-rootFolder = r"/Users/ashutosh/Library/CloudStorage/GoogleDrive-ashutosh.2300705008@cukerala.ac.in/My Drive/DATASET /new_data_TRAINTESTSPLIT/TRAIN"
+folder = r"/Users/ashutosh/Library/CloudStorage/GoogleDrive-ashutosh.2300705008@cukerala.ac.in/My Drive/DATASET /new_data_TRAINTESTSPLIT/TRAIN"
 
 # Prepare a list to hold data for all audio files
-all_data = []
+dataALL = []
 
 # Iterate over each subfolder and file in the root folder
-for subfolder, dirs, files in os.walk(rootFolder):
+for subfolder, dirs, files in os.walk(folder):
     genre = os.path.basename(subfolder)  # Use the subfolder name as the genre
     for file in files:
         if file.endswith(".mp3"):  # Only process .mp3 files
@@ -43,10 +43,10 @@ for subfolder, dirs, files in os.walk(rootFolder):
             feature_means['File Name'] = file
 
             # Append the data to the list
-            all_data.append(feature_means)
+            dataALL.append(feature_means)
 
 # Create a DataFrame from the list of feature data
-df = pd.DataFrame(all_data)
+df = pd.DataFrame(dataALL)
 
 # Set display options to avoid scientific notation
 pd.set_option('display.t_format', '{:.15f}'.format)
