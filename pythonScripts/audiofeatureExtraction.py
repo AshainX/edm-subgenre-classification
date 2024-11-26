@@ -10,7 +10,7 @@ import pandas as pd
 from pyAudioAnalysis import audioBasicIO, ShortTermFeatures
 
 # Define the root folder containing subfolders of audio files
-rootFolder = r"G:\My Drive\DATASET\new_data_TRAINTESTSPLIT\TRAIN"
+rootFolder = r"C:\Users\ashut\Desktop\DATASET\TEST"
 
 # Define the duration (in seconds) to process
 duration_sec = 60
@@ -59,7 +59,7 @@ df = pd.DataFrame(all_data)
 pd.set_option('display.float_format', '{:.15f}'.format)
 
 # Save the DataFrame to an Excel file
-output_filepath = r"G:\My Drive\DATASET\new_data_TRAINTESTSPLIT\TRAIN.xlsx"
+output_filepath = r"C:\Users\ashut\Desktop\DATASET\TEST.xlsx"
 df.to_excel(output_filepath, index=False)
 
 print(f"Features for all audio files saved to {output_filepath}")
