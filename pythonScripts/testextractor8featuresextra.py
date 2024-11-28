@@ -11,7 +11,7 @@ folder = r"C:\Users\ashut\Desktop\DATASET\TEST"
 dataALL = []
 
 # Duration to process (in seconds)
-durationToProcess = 60  # Change this to the desired duration (in seconds)
+durationToProcess = 120  # Change this to the desired duration (in seconds)
 
 # Iterate over each subfolder and file in the root folder
 for subfolder, dirs, files in os.walk(folder):
